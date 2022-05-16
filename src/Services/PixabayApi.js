@@ -7,7 +7,7 @@ export async function fetchPictures(query, page) {
     image_type: 'photo',
     per_page: 12,
     orientation: 'horizontal',
-    page: page,
+    page,
   });
 
   const url = `${BASE_URL}?${searchParams}`;
