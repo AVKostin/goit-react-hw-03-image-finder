@@ -2,6 +2,7 @@ import { Component } from 'react';
 import Searchbar from '../Searchbar';
 import SearchInfo from '../SearchInfo/SearchInfo';
 import ScrollOnTop from '../ScrollToTop';
+
 class App extends Component {
   state = {
     query: '',
@@ -25,4 +26,5 @@ class App extends Component {
     );
   }
 }
+
 export default App;

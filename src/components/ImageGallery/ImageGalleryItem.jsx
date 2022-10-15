@@ -19,12 +19,12 @@ const ImageGalleryItem = ({
   setInfoForModal,
   id,
   webformatURL,
+  largeImageURL,
   tags,
   likes,
   views,
   comments,
   downloads,
-  largeImageURL,
 }) => {
   const handleClick = () => {
     Loading.arrows({ svgSize: '120px' });
@@ -70,11 +70,11 @@ const ImageGalleryItem = ({
 };
 
 ImageGalleryItem.propTypes = {
-  largeImageURL: PropTypes.string.isRequired,
+  setInfoForModal: PropTypes.func.isRequired,
   id: PropTypes.number.isRequired,
   webformatURL: PropTypes.string.isRequired,
+  largeImageURL: PropTypes.string.isRequired,
   tags: PropTypes.string.isRequired,
-  setInfoForModal: PropTypes.func.isRequired,
   likes: PropTypes.number.isRequired,
   views: PropTypes.number.isRequired,
   comments: PropTypes.number.isRequired,
